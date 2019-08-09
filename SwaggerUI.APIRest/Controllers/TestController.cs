@@ -17,13 +17,13 @@ namespace SwaggerUI.APIRest.Controllers
 
     public class TestController : ApiController
     {
-        /// GET: /api/Nombre
+        /// GET: /api/Test
         /// <summary>
         /// Prueba
         /// </summary>
         
-        [HttpGet]
-        public string Nombre()
+        
+        public string Get()
         {
             return "Texto de prueba.";
         }

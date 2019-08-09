@@ -489,8 +489,8 @@
             Texto
             </remarks>
         </member>
-        <member name="M:SwaggerUI.APIRest.Controllers.TestController.Nombre">
-            GET: /api/Nombre
+        <member name="M:SwaggerUI.APIRest.Controllers.TestController.Get">
+            GET: /api/Test
             <summary>
             Prueba
             </summary>
