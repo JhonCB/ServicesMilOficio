@@ -67,14 +67,14 @@ namespace SwaggerUI.APIRest.Controllers
              
                     response.codResultado = 1;
                     response.desResultado = "Lista de Servicios";
-                    response.alServicio = alServicio;
+                    response.listaServicio = alServicio;
 
             }
             catch (Exception ex)
             {
                 response.codResultado = 0;
                 response.desResultado = ex.ToString();
-                response.alServicio = null;
+                response.listaServicio = null;
             }
 
             finally

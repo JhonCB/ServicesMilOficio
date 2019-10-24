@@ -8,10 +8,10 @@ namespace SwaggerUI.APIRest.Entities
 {
     public class ResponseServicio : AbstractEntity
     {
-        public List<Servicio> alServicio { get; set; }
+        public List<Servicio> listaServicio { get; set; }
         public ResponseServicio()
         {
-            this.alServicio = new List<Servicio>();
+            this.listaServicio = new List<Servicio>();
         }
 
     }

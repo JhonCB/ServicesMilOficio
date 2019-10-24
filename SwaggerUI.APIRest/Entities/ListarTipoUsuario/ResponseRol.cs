@@ -8,10 +8,10 @@ namespace SwaggerUI.APIRest.Entities
 {
     public class ResponseRol : AbstractEntity
     {
-        public List<Rol> alRol { get; set; }
+        public List<Rol> listaRol { get; set; }
         public ResponseRol()
         {
-            this.alRol = new List<Rol>();
+            this.listaRol = new List<Rol>();
         }
 
     }

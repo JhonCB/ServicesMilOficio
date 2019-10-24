@@ -8,10 +8,10 @@ namespace SwaggerUI.APIRest.Entities
 {
     public class ResponeLocalizacion : AbstractEntity
     {
-        public List<Localizacion> alLocalizacion { get; set; }
+        public List<Localizacion> listaLocalizacion { get; set; }
         public ResponeLocalizacion()
         {
-            this.alLocalizacion = new List<Localizacion>();
+            this.listaLocalizacion = new List<Localizacion>();
         }
 
     }

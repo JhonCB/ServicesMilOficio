@@ -49,14 +49,14 @@ namespace SwaggerUI.APIRest.Controllers
              
                     response.codResultado = 1;
                     response.desResultado = "Lista de Ubicaciones";
-                    response.alLocalizacion = alLocalizacion;
+                    response.listaLocalizacion = alLocalizacion;
 
             }
             catch (Exception ex)
             {
                 response.codResultado = 0;
                 response.desResultado = ex.ToString();
-                response.alLocalizacion = null;
+                response.listaLocalizacion = null;
             }
 
             finally

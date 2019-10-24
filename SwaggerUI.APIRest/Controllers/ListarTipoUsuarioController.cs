@@ -47,14 +47,14 @@ namespace SwaggerUI.APIRest.Controllers
              
                     response.codResultado = 1;
                     response.desResultado = "Lista de Roles";
-                    response.alRol = alRol;
+                    response.listaRol = alRol;
 
             }
             catch (Exception ex)
             {
                 response.codResultado = 0;
                 response.desResultado = ex.ToString();
-                response.alRol = null;
+                response.listaRol = null;
             }
 
             finally
