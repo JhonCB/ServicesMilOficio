@@ -481,6 +481,18 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioController">
+             SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES
+            
+            <summary>  
+            ListarCategoriaController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioController.GetListarServicio">
+            <summary>  
+            getListarCategoria
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.ListarLocalizacionController">
             <summary>  
             ListarLocalizacionController  
@@ -577,6 +589,61 @@
             </summary>  
         </member>
         <member name="P:Entities.Localizacion.longitud">
+            <summary>  
+            longitud  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.codUsuario">
+            <summary>  
+            codUsuario  
+            </summary>
+        </member>
+        <member name="P:Entities.Servicio.nombre">
+            <summary>  
+            nombre  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.calificacion">
+            <summary>  
+            calificacion  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.fechaInicio">
+            <summary>  
+            fechaInicio  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.fechaFin">
+            <summary>  
+            fechaFin  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.isActivo">
+            <summary>  
+            activo  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.isEliminado">
+            <summary>  
+            eliminado  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.descripcion">
+            <summary>  
+            descripcion  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.ubicacion">
+            <summary>  
+            ubicacion  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.latitud">
+            <summary>  
+            latitud  
+            </summary>  
+        </member>
+        <member name="P:Entities.Servicio.longitud">
             <summary>  
             longitud  
             </summary>  
