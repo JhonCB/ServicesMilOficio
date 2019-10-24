@@ -15,18 +15,18 @@ using System.Web.Http.Description;
 namespace SwaggerUI.APIRest.Controllers
 {
     /**
-     * SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES
+     * SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES POR UBICACION O LOCALIZACION ES LO MISMO :v
      **/
 
     /// <summary>  
-    /// ListarServicioController  
+    /// ListarServicioXLocalizacionController  
     /// </summary> 
-    public class ListarServicioController : ApiController
+    public class ListarServicioXLocalizacionController : ApiController
     {
         /// <summary>  
-        /// getListarServicio
+        /// getListarCategoria
         /// </summary>  
-        public ResponseServicio getListarServicio()
+        public ResponseServicio getListarServicioXLocalizacion(int codLocalizacion)
         {
 
             ResponseServicio response = new ResponseServicio();
@@ -34,8 +34,9 @@ namespace SwaggerUI.APIRest.Controllers
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
             {
-                SqlCommand cmd = new SqlCommand("LISTAR_SERVICIO", con);
+                SqlCommand cmd = new SqlCommand("ServiciosXubicacion", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ubicacion", codLocalizacion);
                 con.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();

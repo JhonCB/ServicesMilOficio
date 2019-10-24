@@ -15,18 +15,18 @@ using System.Web.Http.Description;
 namespace SwaggerUI.APIRest.Controllers
 {
     /**
-     * SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES
+     * SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES POR CATEGORIA
      **/
 
     /// <summary>  
-    /// ListarServicioController  
+    /// ListarServicioXCategoriaController  
     /// </summary> 
-    public class ListarServicioController : ApiController
+    public class ListarServicioXCategoriaController : ApiController
     {
         /// <summary>  
-        /// getListarServicio
+        /// getListarCategoria
         /// </summary>  
-        public ResponseServicio getListarServicio()
+        public ResponseServicio getListarServicioXCategoria(int codCategoria)
         {
 
             ResponseServicio response = new ResponseServicio();
@@ -34,8 +34,9 @@ namespace SwaggerUI.APIRest.Controllers
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
             {
-                SqlCommand cmd = new SqlCommand("LISTAR_SERVICIO", con);
+                SqlCommand cmd = new SqlCommand("BuscarServicioXcategoria", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@categoria", codCategoria);
                 con.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();

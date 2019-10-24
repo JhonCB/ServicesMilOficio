@@ -163,6 +163,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ListarServicioXCategoriaController.cs" />
+    <Compile Include="Controllers\ListarServicioXLocalizacionController.cs" />
     <Compile Include="Controllers\ListarServicioController.cs" />
     <Compile Include="Controllers\ListarLocalizacionController.cs" />
     <Compile Include="Controllers\ConsultarCorreoController.cs" />

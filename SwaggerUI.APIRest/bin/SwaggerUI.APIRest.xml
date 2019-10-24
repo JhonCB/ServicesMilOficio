@@ -481,16 +481,40 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioXCategoriaController">
+             SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES POR CATEGORIA
+            
+            <summary>  
+            ListarServicioXCategoriaController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioXCategoriaController.getListarServicioXCategoria(System.Int32)">
+            <summary>  
+            getListarCategoria
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioXLocalizacionController">
+             SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES POR UBICACION O LOCALIZACION ES LO MISMO :v
+            
+            <summary>  
+            ListarServicioXLocalizacionController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioXLocalizacionController.getListarServicioXLocalizacion(System.Int32)">
+            <summary>  
+            getListarCategoria
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioController">
              SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES
             
             <summary>  
-            ListarCategoriaController  
+            ListarServicioController  
             </summary> 
         </member>
-        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioController.GetListarServicio">
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioController.getListarServicio">
             <summary>  
-            getListarCategoria
+            getListarServicio
             </summary>  
         </member>
         <member name="T:SwaggerUI.APIRest.Controllers.ListarLocalizacionController">
