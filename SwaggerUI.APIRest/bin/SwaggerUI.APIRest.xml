@@ -481,18 +481,204 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="T:SwaggerUI.APIRest.Controllers.TestController">
-            <summary>
-            Prueba
-            </summary>
-            <remarks>
-            Texto
-            </remarks>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarLocalizacionController">
+            <summary>  
+            ListarLocalizacionController  
+            </summary> 
         </member>
-        <member name="M:SwaggerUI.APIRest.Controllers.TestController.Get">
-            GET: /api/Test
-            <summary>
-            Prueba
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarLocalizacionController.getListarLocalizacion">
+            <summary>  
+            getListarLocalizacion
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ConsultarCorreoController">
+            <summary>  
+            ConsultarCorreoController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ConsultarCorreoController.getConsultarCorreo(System.String)">
+            <summary>  
+            getConsultarCorreo
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.RegistrarUsuarioController">
+            <summary>  
+            RegistrarUsuarioController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.RegistrarUsuarioController.getRegistrarUsuario(System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Int32,System.Int32)">
+            <summary>  
+            getListarTipoUsuario
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListaTipoUsuarioController">
+            <summary>  
+            ListaTipoUsuarioController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListaTipoUsuarioController.getListarTipoUsuario">
+            <summary>  
+            getListarTipoUsuario
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarCategoriaController">
+            <summary>  
+            ListarCategoriaController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarCategoriaController.getListarCategoria">
+            <summary>  
+            getListarCategoria
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ConsultarUsuarioPorDNI2Controller">
+            <summary>  
+            ConsultarUsuarioPorDNIController2  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ConsultarUsuarioPorDNI2Controller.GetConsultarUsuarioPorDNI2(System.String)">
+            <summary>  
+            GetConsultarUsuarioPorDNI2
+            </summary>  
+        </member>
+        <member name="P:SwaggerUI.APIRest.Entities.AbstractEntity.codResultado">
+            <summary>  
+            codResultado 
+            </summary>  
+        </member>
+        <member name="P:SwaggerUI.APIRest.Entities.AbstractEntity.desResultado">
+            <summary>  
+            desResultado
+            </summary>  
+        </member>
+        <member name="P:Entities.Categoria.codCategoria">
+            <summary>  
+            codCategoria  
+            </summary>
+        </member>
+        <member name="P:Entities.Categoria.nomCategoria">
+            <summary>  
+            nomCategoria  
+            </summary>  
+        </member>
+        <member name="P:Entities.Localizacion.codLocalizacion">
+            <summary>  
+            codLocalizacion  
+            </summary>
+        </member>
+        <member name="P:Entities.Localizacion.nomLocalizacion">
+            <summary>  
+            nomLocalizacion  
+            </summary>  
+        </member>
+        <member name="P:Entities.Localizacion.latitud">
+            <summary>  
+            latitud  
+            </summary>  
+        </member>
+        <member name="P:Entities.Localizacion.longitud">
+            <summary>  
+            longitud  
+            </summary>  
+        </member>
+        <member name="P:Entities.Rol.codRol">
+            <summary>  
+            codRol  
+            </summary>
+        </member>
+        <member name="P:Entities.Rol.nomRol">
+            <summary>  
+            nomRol  
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.Nombres">
+            <summary>  
+            Nombres  
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.Correo">
+            <summary>  
+            Correo 
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.Contrasena">
+            <summary>  
+            Contraseña 
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.isActivo">
+            <summary>  
+            isActivo 
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.isEliminado">
+            <summary>  
+            isEliminado 
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.Fecha">
+            <summary>  
+            Fecha
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.TipoUsuario">
+            <summary>  
+            TipoUsuario  
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.Localizacion">
+            <summary>  
+            Localizacion  
+            </summary>
+        </member>
+        <member name="P:Entities.Usuario.Tipo_usuario">
+            <summary>  
+            Tipo_usuario  
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.NomUsuario">
+            <summary>  
+            NomUsuario  
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Contrasena">
+            <summary>  
+            Contrasena  
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Nombres">
+            <summary>  
+            Nombres  
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Apellidos">
+            <summary>  
+            Apellidos 
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.DNI">
+            <summary>  
+            DNI 
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Correo">
+            <summary>  
+            Correo 
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Telefono">
+            <summary>  
+            Telefono
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Direccion">
+            <summary>  
+            Direccion  
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.FechaNacimiento">
+            <summary>  
+            FechaNacimiento  
             </summary>
         </member>
     </members>
