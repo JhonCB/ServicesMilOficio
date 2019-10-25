@@ -36,6 +36,10 @@ namespace Entities
         /// </summary>  
         public string Fecha { get; set; }
         /// <summary>  
+        /// telefono  
+        /// </summary>  
+        public int telefono { get; set; }
+        /// <summary>  
         /// TipoUsuario  
         /// </summary>  
         public int TipoUsuario { get; set; }

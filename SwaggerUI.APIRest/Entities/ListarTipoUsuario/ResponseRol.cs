@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SwaggerUI.APIRest.Entities
 {
-    public class ResponseRol : AbstractEntity
+    public class ResponseRol : Resultado
     {
         public List<Rol> listaRol { get; set; }
         public ResponseRol()

@@ -481,6 +481,16 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ConsultarCorreoController">
+            <summary>  
+            ConsultarCorreoController   
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ConsultarCorreoController.getConsultarCorreo(System.String)">
+            <summary>  
+            getConsultarCorreo
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioXCategoriaController">
              SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES POR CATEGORIA
             
@@ -527,12 +537,12 @@
             getListarLocalizacion
             </summary>  
         </member>
-        <member name="T:SwaggerUI.APIRest.Controllers.ConsultarCorreoController">
+        <member name="T:SwaggerUI.APIRest.Controllers.ConsultarTelefonoController">
             <summary>  
-            ConsultarCorreoController  
+            ConsultarTelefonoController  
             </summary> 
         </member>
-        <member name="M:SwaggerUI.APIRest.Controllers.ConsultarCorreoController.getConsultarCorreo(System.String)">
+        <member name="M:SwaggerUI.APIRest.Controllers.ConsultarTelefonoController.getConsultarTelefono(System.Int32)">
             <summary>  
             getConsultarCorreo
             </summary>  
@@ -542,7 +552,7 @@
             RegistrarUsuarioController  
             </summary> 
         </member>
-        <member name="M:SwaggerUI.APIRest.Controllers.RegistrarUsuarioController.getRegistrarUsuario(System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Int32,System.Int32)">
+        <member name="M:SwaggerUI.APIRest.Controllers.RegistrarUsuarioController.getRegistrarUsuario(System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Int32,System.Int32,System.Int32)">
             <summary>  
             getListarTipoUsuario
             </summary>  
@@ -577,12 +587,12 @@
             GetConsultarUsuarioPorDNI2
             </summary>  
         </member>
-        <member name="P:SwaggerUI.APIRest.Entities.AbstractEntity.codResultado">
+        <member name="P:SwaggerUI.APIRest.Entities.Resultado.codResultado">
             <summary>  
             codResultado 
             </summary>  
         </member>
-        <member name="P:SwaggerUI.APIRest.Entities.AbstractEntity.desResultado">
+        <member name="P:SwaggerUI.APIRest.Entities.Resultado.desResultado">
             <summary>  
             desResultado
             </summary>  
@@ -617,9 +627,9 @@
             longitud  
             </summary>  
         </member>
-        <member name="P:Entities.Servicio.codUsuario">
+        <member name="P:Entities.Servicio.codServicio">
             <summary>  
-            codUsuario  
+            codServicio  
             </summary>
         </member>
         <member name="P:Entities.Servicio.nombre">
@@ -642,14 +652,9 @@
             fechaFin  
             </summary>  
         </member>
-        <member name="P:Entities.Servicio.isActivo">
+        <member name="P:Entities.Servicio.estado">
             <summary>  
-            activo  
-            </summary>  
-        </member>
-        <member name="P:Entities.Servicio.isEliminado">
-            <summary>  
-            eliminado  
+            estado  
             </summary>  
         </member>
         <member name="P:Entities.Servicio.descripcion">
@@ -710,6 +715,11 @@
         <member name="P:Entities.UsuarioReg.Fecha">
             <summary>  
             Fecha
+            </summary>  
+        </member>
+        <member name="P:Entities.UsuarioReg.telefono">
+            <summary>  
+            telefono  
             </summary>  
         </member>
         <member name="P:Entities.UsuarioReg.TipoUsuario">

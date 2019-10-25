@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SwaggerUI.APIRest.Entities
 {
-    public class ResponeLocalizacion : AbstractEntity
+    public class ResponeLocalizacion : Resultado
     {
         public List<Localizacion> listaLocalizacion { get; set; }
         public ResponeLocalizacion()

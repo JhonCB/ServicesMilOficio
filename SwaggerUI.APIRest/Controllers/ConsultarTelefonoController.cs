@@ -16,23 +16,23 @@ namespace SwaggerUI.APIRest.Controllers
 {
 
     /// <summary>  
-    /// ConsultarCorreoController  
+    /// ConsultarTelefonoController  
     /// </summary> 
-    public class ConsultarCorreoController : ApiController
+    public class ConsultarTelefonoController : ApiController
     {
         /// <summary>  
         /// getConsultarCorreo
         /// </summary>  
-        public AbstractEntity getConsultarCorreo(String email)
+        public Resultado getConsultarTelefono(int telefono)
         {
 
-            AbstractEntity response = new AbstractEntity();
+            Resultado response = new Resultado();
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
             {
-                SqlCommand cmd = new SqlCommand("VALIDAR_EMAIL", con);
+                SqlCommand cmd = new SqlCommand("VALIDAR_TELEFONO", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@telefono", telefono);
                 con.Open();
 
                 SqlDataReader dr = cmd.ExecuteReader();

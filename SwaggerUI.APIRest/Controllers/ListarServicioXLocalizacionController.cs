@@ -44,8 +44,8 @@ namespace SwaggerUI.APIRest.Controllers
                 while (dr.Read())
                 {
                     Servicio servicio = new Servicio();
-                    servicio.codUsuario = dr.IsDBNull(dr.GetOrdinal("CODIGO")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("ID-USUARIO"));
-                    servicio.nombre = "";
+                    servicio.codServicio = dr.IsDBNull(dr.GetOrdinal("CODIGO")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("CODIGO"));
+                    servicio.nombre = dr.IsDBNull(dr.GetOrdinal("NOMBRE")) ? "" : dr.GetString(dr.GetOrdinal("NOMBRE"));
                     servicio.calificacion = dr.IsDBNull(dr.GetOrdinal("CALIFICACION")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("CALIFICACION"));
 
                     DateTime dtFechaInicio = dr.IsDBNull(dr.GetOrdinal("FECHA-INICIO")) ? default(DateTime) : dr.GetDateTime(dr.GetOrdinal("FECHA-INICIO"));
@@ -56,8 +56,7 @@ namespace SwaggerUI.APIRest.Controllers
                     string fechaFinString = dtFechaFin.ToString("dd/MM/yyyy hh:mm:ss");
                     servicio.fechaFin = fechaFinString;
 
-                    servicio.isActivo = dr.IsDBNull(dr.GetOrdinal("ISACTIVO")) ? false: dr.GetBoolean(dr.GetOrdinal("ISACTIVO"));
-                    servicio.isEliminado = dr.IsDBNull(dr.GetOrdinal("ISELIMINADO")) ? true : dr.GetBoolean(dr.GetOrdinal("ISELIMINADO"));
+                    servicio.estado = dr.IsDBNull(dr.GetOrdinal("ESTADO")) ? "" : dr.GetString(dr.GetOrdinal("ESTADO"));
                     servicio.descripcion = dr.IsDBNull(dr.GetOrdinal("DESCRIPCION")) ? "" : dr.GetString(dr.GetOrdinal("DESCRIPCION"));
                     servicio.ubicacion = dr.IsDBNull(dr.GetOrdinal("UBICACION")) ? "" : dr.GetString(dr.GetOrdinal("UBICACION"));
                     servicio.latitud = dr.IsDBNull(dr.GetOrdinal("LATITUD")) ? "" : dr.GetString(dr.GetOrdinal("LATITUD"));

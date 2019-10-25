@@ -23,7 +23,7 @@ namespace SwaggerUI.APIRest.Controllers
         /// <summary>  
         /// getListarTipoUsuario
         /// </summary>  
-        public ResponseUsuarioReg getRegistrarUsuario(String Nombre, String Email, String Contrasenia, Boolean isActivo, Boolean isElimando, String FechaCreacion, int codRol, int codLocalizacion)
+        public ResponseUsuarioReg getRegistrarUsuario(String Nombre, String Email, String Contrasenia, Boolean isActivo, Boolean isElimando, String FechaCreacion,int Telefono, int codRol, int codLocalizacion)
         {
 
             ResponseUsuarioReg response = new ResponseUsuarioReg();
@@ -34,12 +34,13 @@ namespace SwaggerUI.APIRest.Controllers
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@nombre", Nombre);
                 cmd.Parameters.AddWithValue("@email", Email);
-                cmd.Parameters.AddWithValue("@password", Contrasenia);
-                cmd.Parameters.AddWithValue("@activo", isActivo);
-                cmd.Parameters.AddWithValue("@eliminado", isElimando);
+                cmd.Parameters.AddWithValue("@Contraseña", Contrasenia);
+                cmd.Parameters.AddWithValue("@Activo", isActivo);
+                cmd.Parameters.AddWithValue("@Eliminado", isElimando);
                 cmd.Parameters.AddWithValue("@fecha", FechaCreacion);
-                cmd.Parameters.AddWithValue("@idrol", codRol);
-                cmd.Parameters.AddWithValue("@idlocalizacion", codLocalizacion);
+                cmd.Parameters.AddWithValue("@telefono", Telefono);
+                cmd.Parameters.AddWithValue("@rol", codRol);
+                cmd.Parameters.AddWithValue("@localizacion", codLocalizacion);
 
                 con.Open();
 

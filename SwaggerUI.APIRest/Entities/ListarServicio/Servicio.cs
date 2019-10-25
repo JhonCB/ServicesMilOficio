@@ -10,9 +10,9 @@ namespace Entities
     public class Servicio 
     {
         /// <summary>  
-        /// codUsuario  
+        /// codServicio  
         /// </summary>
-        public int codUsuario { get; set; }
+        public int codServicio { get; set; }
         /// <summary>  
         /// nombre  
         /// </summary>  
@@ -30,13 +30,9 @@ namespace Entities
         /// </summary>  
         public string fechaFin { get; set; }
         /// <summary>  
-        /// activo  
+        /// estado  
         /// </summary>  
-        public Boolean isActivo { get; set; }
-        /// <summary>  
-        /// eliminado  
-        /// </summary>  
-        public Boolean isEliminado { get; set; }
+        public string estado { get; set; }
         /// <summary>  
         /// descripcion  
         /// </summary>  

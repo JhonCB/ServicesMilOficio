@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SwaggerUI.APIRest.Entities
 {
-    public class AbstractEntity
+    public class Resultado
     {
         /// <summary>  
         /// codResultado 

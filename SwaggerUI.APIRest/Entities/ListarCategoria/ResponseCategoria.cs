@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SwaggerUI.APIRest.Entities
 {
-    public class ResponseCategoria : AbstractEntity
+    public class ResponseCategoria : Resultado
     {
         public List<Categoria> listaCategoria { get; set; }
         public ResponseCategoria()
