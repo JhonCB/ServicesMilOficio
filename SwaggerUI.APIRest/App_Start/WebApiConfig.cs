@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Net.Http.Headers;
 
 namespace SwaggerUI.APIRest
 {
@@ -19,6 +20,11 @@ namespace SwaggerUI.APIRest
                 routeTemplate: "API/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            // Para deshabilitar el seguimiento en la aplicación, incluya un comentario o quite la siguiente línea de código
+            // Para obtener más información, consulte: http://www.asp.net/web-api
+            config.Formatters.JsonFormatter.SupportedMediaTypes
+            .Add(new MediaTypeHeaderValue("text/html"));
+           // config.EnableSystemDiagnosticsTracing();
         }
     }
 }
