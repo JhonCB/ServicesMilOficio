@@ -25,7 +25,6 @@ namespace SwaggerUI.APIRest.Controllers
         /// </summary>  
         public Resultado getConsultarTelefono(int telefono)
         {
-
             Resultado response = new Resultado();
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
@@ -34,7 +33,6 @@ namespace SwaggerUI.APIRest.Controllers
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@telefono", telefono);
                 con.Open();
-
                 SqlDataReader dr = cmd.ExecuteReader();
                 dr.Read();
              

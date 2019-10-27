@@ -491,6 +491,30 @@
             getConsultarCorreo
             </summary>  
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioCalificacionController">
+             SE ENCARGA DE LISTAR TODOS LAS OFERTAS CON MEJOR CALIFICACION
+            
+            <summary>  
+            ListarServicioCalificacionController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioCalificacionController.getListarServicioCalificacion">
+            <summary>  
+            getListarServicioCalificacion
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioRecienteController">
+             SE ENCARGA DE LISTAR TODOS LAS OFERTAS RECIEN PUBLICADAS O MÁS RECIENTES
+            
+            <summary>  
+            ListarServicioRecienteController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioRecienteController.getListarServicioReciente">
+            <summary>  
+            getListarServicioReciente
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioXCategoriaController">
              SE ENCARGA DE LISTAR TODOS LAS OFERTAS DISPONIBLES POR CATEGORIA
             
