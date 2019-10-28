@@ -571,6 +571,16 @@
             getConsultarCorreo
             </summary>  
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.RegistrarServicioController">
+            <summary>  
+            RegistrarServicioController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.RegistrarServicioController.getRegistrarServicio(System.Int32,System.String,System.String,System.Int32,System.Int32)">
+            <summary>  
+            getRegistrarServicio
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.RegistrarUsuarioController">
             <summary>  
             RegistrarUsuarioController  

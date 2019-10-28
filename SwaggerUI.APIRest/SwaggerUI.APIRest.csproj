@@ -171,6 +171,7 @@
     <Compile Include="Controllers\ListarServicioController.cs" />
     <Compile Include="Controllers\ListarLocalizacionController.cs" />
     <Compile Include="Controllers\ConsultarTelefonoController.cs" />
+    <Compile Include="Controllers\RegistrarServicioController.cs" />
     <Compile Include="Controllers\RegistrarUsuarioController.cs" />
     <Compile Include="Controllers\ListarTipoUsuarioController.cs" />
     <Compile Include="Controllers\ListarCategoriaController.cs" />
