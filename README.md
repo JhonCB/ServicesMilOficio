@@ -17,9 +17,9 @@ git clone INGRESE_URL
 ### Activar IIS ###
 Panel de control < Características de Window:
 
-*.NET Framework 3.5 (Include .NET 2.0 y 3.0).
-*Internet Information Services.
-*Servicios avanzados de .NET Framework 4.7.
+* .NET Framework 3.5 (Include .NET 2.0 y 3.0).
+* Internet Information Services.
+* Servicios avanzados de .NET Framework 4.7.
 
 
 ### Activar los protocolos de Sql Server Configuration Manager ###
@@ -30,9 +30,9 @@ Panel de control < Características de Window:
 
 ### Reiniciar los servicios ##
 Services de windows :
-```
-MSSQLSERVER `Reiniciar`
-```
+
+* MSSQLSERVER `Reiniciar`.
+
 
 ### Publicar el servicio ###
 Proyecto de C#:
