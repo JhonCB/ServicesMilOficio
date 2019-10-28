@@ -1,7 +1,6 @@
 # README #
 
 Leeme si no sabes como instalar.
-### Hecho por Jhon Coronel ###
 
 ### Para qué es este repositorio? ###
 
@@ -18,18 +17,16 @@ git clone INGRESE_URL
 ### Activar IIS ###
 Panel de control < Características de Window:
 
-```
 *.NET Framework 3.5 (Include .NET 2.0 y 3.0)
 *Internet Information Services
 *Servicios avanzados de .NET Framework 4.7
-```
+
 
 ### Activar los protocolos de Sql Server Configuration Manager ###
 
-```
 * Canalizaciones con nombre `Habilitado`
 * TCP/IP `Habilitado`
-```
+
 
 ### Reiniciar los servicios ##
 Services de windows :
@@ -44,7 +41,7 @@ Click derecho a `SwaggerUI.APIRest` y despues a `Publicar`, escoger la carpeta y
 TU-PC
       Sitios
             Default Web Site (Click derecho - "Agregar Aplicación" - Seleccionar la ruta anterior - Colocar Nombre - Aceptar)
-                              MilOficiosv3 (Click derecho - "Administrar aplicación" - "Examinar")
+                                                                  MilOficiosv3 (Click derecho - "Administrar aplicación" - "Examinar")
                                   
                                                                     
 ```
