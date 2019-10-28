@@ -41,7 +41,7 @@ namespace SwaggerUI.APIRest.Controllers
                 cmd.Parameters.AddWithValue("@estado", 1);
                 cmd.Parameters.AddWithValue("@idcategoria", CodCategoria);
                 cmd.Parameters.AddWithValue("@localizacion", codLocalizacion);
-
+                //
                 con.Open();
 
                 int codResultado = cmd.ExecuteNonQuery();
