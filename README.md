@@ -21,6 +21,12 @@ Panel de control < Características de Window:
 * Internet Information Services.
 * Servicios avanzados de .NET Framework 4.7.
 
+### Conceder permisos a la carpeta autogenerada "inetpub" ###
+C:\inetpub (conceder todos los permisos a los siguientes usuarios) : 
+
+* Todos.
+* IUSR.
+* IIS_IUSRS.
 
 ### Activar los protocolos de Sql Server Configuration Manager ###
 
