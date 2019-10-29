@@ -66,7 +66,7 @@ namespace SwaggerUI.APIRest.Controllers
                 }
              
                     response.codResultado = 1;
-                    response.desResultado = "Lista de Servicios";
+                    response.desResultado = "Lista de Usuarios";
                     response.listaUsuario = alUsuario;
 
             }
