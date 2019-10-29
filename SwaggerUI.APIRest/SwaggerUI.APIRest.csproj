@@ -164,6 +164,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ConsultarCorreoController .cs" />
+    <Compile Include="Controllers\EliminarServicioController.cs" />
+    <Compile Include="Controllers\EliminarUsuarioController.cs" />
     <Compile Include="Controllers\ListarServicioCalificacionController.cs" />
     <Compile Include="Controllers\ListarServicioRecienteController.cs" />
     <Compile Include="Controllers\ListarServicioXCategoriaController.cs" />
@@ -171,12 +173,15 @@
     <Compile Include="Controllers\ListarServicioController.cs" />
     <Compile Include="Controllers\ListarLocalizacionController.cs" />
     <Compile Include="Controllers\ConsultarTelefonoController.cs" />
+    <Compile Include="Controllers\ListarUsuarioController.cs" />
+    <Compile Include="Controllers\ModificarServicioController.cs" />
+    <Compile Include="Controllers\ModificarUsuarioController.cs" />
     <Compile Include="Controllers\RegistrarServicioController.cs" />
     <Compile Include="Controllers\RegistrarUsuarioController.cs" />
     <Compile Include="Controllers\ListarTipoUsuarioController.cs" />
     <Compile Include="Controllers\ListarCategoriaController.cs" />
-    <Compile Include="Controllers\ConsultarUsuarioPorDNI2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Entities\ResponseUsuario.cs" />
     <Compile Include="Entities\Resultado.cs" />
     <Compile Include="Entities\ListarCategoria\Categoria.cs" />
     <Compile Include="Entities\ListarCategoria\ResponseCategoria.cs" />
@@ -188,7 +193,6 @@
     <Compile Include="Entities\ListarTipoUsuario\ResponseRol.cs" />
     <Compile Include="Entities\RegistrarUsuario\ResponseUsuarioReg.cs" />
     <Compile Include="Entities\RegistrarUsuario\UsuarioReg.cs" />
-    <Compile Include="Entities\ResponseConsultarUsuario2.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

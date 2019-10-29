@@ -51,7 +51,7 @@ namespace SwaggerUI.APIRest.Controllers
                 if (codResultado == 1)
                 {
                     response.codResultado = 1;
-                    response.desResultado = "Registrado Correctamente";
+                    response.desResultado = "Servicio registrado correctamente";
                 }
                 else
                 {

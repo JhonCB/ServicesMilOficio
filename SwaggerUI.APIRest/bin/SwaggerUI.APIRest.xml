@@ -491,6 +491,26 @@
             getConsultarCorreo
             </summary>  
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.EliminarServicioController">
+            <summary>  
+            EliminarServicioController 
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.EliminarServicioController.getEliminarServicio(System.Int32)">
+            <summary>  
+            getEliminarServicio
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.EliminarUsuarioController">
+            <summary>  
+            EliminarUsuarioController 
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.EliminarUsuarioController.getEliminarUsuario(System.Int32)">
+            <summary>  
+            getEliminarUsuario
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioCalificacionController">
              SE ENCARGA DE LISTAR TODOS LAS OFERTAS CON MEJOR CALIFICACION
             
@@ -571,6 +591,38 @@
             getConsultarCorreo
             </summary>  
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarUsuarioController">
+             SE ENCARGA DE LISTAR TODOS LOS USUARIOS DISPONIBLES
+            
+            <summary>  
+            ListarUsuarioController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarUsuarioController.getListarUsuario">
+            <summary>  
+            getListarUsuario
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ModificarServicioController">
+            <summary>  
+            ModificarServicioController 
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ModificarServicioController.getRegistrarServicio(System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>  
+            getModificarServicio
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ModificarUsuarioController">
+            <summary>  
+            ModificarUsuarioController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ModificarUsuarioController.getModificarUsuario(System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>  
+            getModificarUsuario
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.RegistrarServicioController">
             <summary>  
             RegistrarServicioController  
@@ -609,16 +661,6 @@
         <member name="M:SwaggerUI.APIRest.Controllers.ListarCategoriaController.getListarCategoria">
             <summary>  
             getListarCategoria
-            </summary>  
-        </member>
-        <member name="T:SwaggerUI.APIRest.Controllers.ConsultarUsuarioPorDNI2Controller">
-            <summary>  
-            ConsultarUsuarioPorDNIController2  
-            </summary> 
-        </member>
-        <member name="M:SwaggerUI.APIRest.Controllers.ConsultarUsuarioPorDNI2Controller.GetConsultarUsuarioPorDNI2(System.String)">
-            <summary>  
-            GetConsultarUsuarioPorDNI2
             </summary>  
         </member>
         <member name="P:SwaggerUI.APIRest.Entities.Resultado.codResultado">
@@ -766,14 +808,19 @@
             Localizacion  
             </summary>
         </member>
+        <member name="P:Entities.Usuario.codUsuario">
+            <summary>  
+            codUsuario  
+            </summary>  
+        </member>
         <member name="P:Entities.Usuario.Tipo_usuario">
             <summary>  
             Tipo_usuario  
             </summary>  
         </member>
-        <member name="P:Entities.Usuario.NomUsuario">
+        <member name="P:Entities.Usuario.Rol">
             <summary>  
-            NomUsuario  
+            Rol  
             </summary>  
         </member>
         <member name="P:Entities.Usuario.Contrasena">
@@ -786,19 +833,19 @@
             Nombres  
             </summary>  
         </member>
-        <member name="P:Entities.Usuario.Apellidos">
-            <summary>  
-            Apellidos 
-            </summary>  
-        </member>
-        <member name="P:Entities.Usuario.DNI">
-            <summary>  
-            DNI 
-            </summary>  
-        </member>
         <member name="P:Entities.Usuario.Correo">
             <summary>  
             Correo 
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Activo">
+            <summary>  
+            Activo
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Eliminado">
+            <summary>  
+            Eliminado
             </summary>  
         </member>
         <member name="P:Entities.Usuario.Telefono">
@@ -806,9 +853,19 @@
             Telefono
             </summary>  
         </member>
-        <member name="P:Entities.Usuario.Direccion">
+        <member name="P:Entities.Usuario.Ubicacion">
             <summary>  
-            Direccion  
+            Ubicacion  
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Latitud">
+            <summary>  
+            Latitud  
+            </summary>  
+        </member>
+        <member name="P:Entities.Usuario.Longitud">
+            <summary>  
+            Longitud  
             </summary>  
         </member>
         <member name="P:Entities.Usuario.FechaNacimiento">

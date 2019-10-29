@@ -16,22 +16,23 @@ namespace SwaggerUI.APIRest.Controllers
 {
 
     /// <summary>  
-    /// RegistrarUsuarioController  
+    /// ModificarUsuarioController  
     /// </summary> 
-    public class RegistrarUsuarioController : ApiController
+    public class ModificarUsuarioController : ApiController
     {
         /// <summary>  
-        /// getListarTipoUsuario
+        /// getModificarUsuario
         /// </summary>  
-        public ResponseUsuarioReg getRegistrarUsuario(String Nombre, String Email, String Contrasenia, Boolean isActivo, Boolean isElimando, String FechaCreacion,int Telefono, int codRol, int codLocalizacion)
+        public ResponseUsuarioReg getModificarUsuario(int CodUsuario, String Nombre, String Email, String Contrasenia, Boolean isActivo, Boolean isElimando, String FechaCreacion,int Telefono, int codRol, int codLocalizacion)
         {
 
             ResponseUsuarioReg response = new ResponseUsuarioReg();
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
             {
-                SqlCommand cmd = new SqlCommand("REGISTRAR_USUARIO", con);
+                SqlCommand cmd = new SqlCommand("MODIFICAR_USUARIO", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", CodUsuario);
                 cmd.Parameters.AddWithValue("@nombre", Nombre);
                 cmd.Parameters.AddWithValue("@email", Email);
                 cmd.Parameters.AddWithValue("@Contraseña", Contrasenia);
@@ -51,7 +52,7 @@ namespace SwaggerUI.APIRest.Controllers
                 if (codResultado == 1)
                 {
                     response.codResultado = 1;
-                    response.desResultado = "Usuario registrado correctamente";
+                    response.desResultado = "Usuario modificado correctamente";
                 }
                 else
                 {

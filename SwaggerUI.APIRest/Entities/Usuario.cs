@@ -9,13 +9,17 @@ namespace Entities
     public partial class Usuario
     {
         /// <summary>  
+        /// codUsuario  
+        /// </summary>  
+        public int codUsuario { get; set; }
+        /// <summary>  
         /// Tipo_usuario  
         /// </summary>  
         public int Tipo_usuario { get; set; }
         /// <summary>  
-        /// NomUsuario  
+        /// Rol  
         /// </summary>  
-        public string NomUsuario { get; set; }
+        public string Rol { get; set; }
         /// <summary>  
         /// Contrasena  
         /// </summary>  
@@ -25,25 +29,33 @@ namespace Entities
         /// </summary>  
         public string Nombres { get; set; }
         /// <summary>  
-        /// Apellidos 
-        /// </summary>  
-        public string Apellidos { get; set; }
-        /// <summary>  
-        /// DNI 
-        /// </summary>  
-        public string DNI { get; set; }
-        /// <summary>  
         /// Correo 
         /// </summary>  
         public string Correo { get; set; }
+        /// <summary>  
+        /// Activo
+        /// </summary>  
+        public Boolean Activo { get; set; }
+        /// <summary>  
+        /// Eliminado
+        /// </summary>  
+        public Boolean Eliminado { get; set; }
         /// <summary>  
         /// Telefono
         /// </summary>  
         public string Telefono { get; set; }
         /// <summary>  
-        /// Direccion  
+        /// Ubicacion  
         /// </summary>  
-        public string Direccion { get; set; }
+        public string Ubicacion { get; set; }
+        /// <summary>  
+        /// Latitud  
+        /// </summary>  
+        public string Latitud { get; set; }
+        /// <summary>  
+        /// Longitud  
+        /// </summary>  
+        public string Longitud { get; set; }
         /// <summary>  
         /// FechaNacimiento  
         /// </summary>
