@@ -23,7 +23,7 @@ namespace SwaggerUI.APIRest.Controllers
         /// <summary>  
         /// getRegistrarServicio
         /// </summary>  
-        public ResponseUsuarioReg getRegistrarServicio(int CodUsuario, String Descripcion, String FechaFin, int CodCategoria, int codLocalizacion)
+        public ResponseUsuarioReg getRegistrarServicio(int CodUsuario, String Descripcion, String FechaFin, int CodCategoria, int codLocalizacion, String latitud, String longitud)
         {
 
             ResponseUsuarioReg response = new ResponseUsuarioReg();
@@ -38,15 +38,17 @@ namespace SwaggerUI.APIRest.Controllers
                 DateTime aDate = DateTime.Now;
                 cmd.Parameters.AddWithValue("@fecha_inicio", aDate.ToString("dd/MM/yyyy HH:mm:ss"));
                 cmd.Parameters.AddWithValue("@fecha_fin", FechaFin);
-                cmd.Parameters.AddWithValue("@estado", 1);
                 cmd.Parameters.AddWithValue("@idcategoria", CodCategoria);
                 cmd.Parameters.AddWithValue("@localizacion", codLocalizacion);
+                cmd.Parameters.AddWithValue("@latitud", latitud);
+                cmd.Parameters.AddWithValue("@longitud", longitud);
+                cmd.Parameters.AddWithValue("@estado", 1);
                 //
                 con.Open();
 
                 int codResultado = cmd.ExecuteNonQuery();
-                SqlDataReader dr = cmd.ExecuteReader();
-                dr.Read();
+                //SqlDataReader dr = cmd.ExecuteReader();
+                //dr.Read();
                 //int codResultado = dr.IsDBNull(dr.GetOrdinal("Return Value")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Return Value"));
                 if (codResultado == 1)
                 {
@@ -56,8 +58,8 @@ namespace SwaggerUI.APIRest.Controllers
                 else
                 {
                     response.codResultado = 0;
-                    response.desResultado = dr.IsDBNull(dr.GetOrdinal("Mensaje")) ? "" : dr.GetString(dr.GetOrdinal("Mensaje"));
-                    //response.desResultado = "Error al registrar";
+                    //response.desResultado = dr.IsDBNull(dr.GetOrdinal("Mensaje")) ? "" : dr.GetString(dr.GetOrdinal("Mensaje"));
+                    response.desResultado = "Error al registrar";
                 }
               
                // response.codResultado = dr.IsDBNull(dr.GetOrdinal("Conectado")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Conectado"));

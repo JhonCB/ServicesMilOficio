@@ -24,7 +24,7 @@ namespace SwaggerUI.APIRest
                             .TermsOfService("Some terms")
                         .Contact(cc => cc
                           .Name("Jhon Coronel")
-                          .Url("https://somostechies.com/contact")
+                          .Url("https://www.linkedin.com/in/jhon-coronel-bautista-50a35b171")
                           .Email("Ghoozh@gmail.com"))
                         .License(lc => lc
                           .Name("Some License")

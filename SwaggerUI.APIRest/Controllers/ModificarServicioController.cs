@@ -23,7 +23,7 @@ namespace SwaggerUI.APIRest.Controllers
         /// <summary>  
         /// getModificarServicio
         /// </summary>  
-        public ResponseUsuarioReg getRegistrarServicio(int codServicio, int CodUsuario, String Descripcion, int Calificacion, String FechaInicio, String FechaFin, int Estado,int CodCategoria, int codLocalizacion)
+        public ResponseUsuarioReg getRegistrarServicio(int codServicio, int CodUsuario, String Descripcion, int Calificacion, String FechaInicio, String FechaFin,int CodCategoria, int codLocalizacion,String latitud,String longitud, int Estado)
         {
 
             ResponseUsuarioReg response = new ResponseUsuarioReg();
@@ -38,26 +38,28 @@ namespace SwaggerUI.APIRest.Controllers
                 cmd.Parameters.AddWithValue("@calificacion", Calificacion);
                 cmd.Parameters.AddWithValue("@fecha_inicio", FechaInicio);
                 cmd.Parameters.AddWithValue("@fecha_fin", FechaFin);
-                cmd.Parameters.AddWithValue("@estado", Estado);
                 cmd.Parameters.AddWithValue("@idcategoria", CodCategoria);
                 cmd.Parameters.AddWithValue("@localizacion", codLocalizacion);
+                cmd.Parameters.AddWithValue("@latitud", latitud);
+                cmd.Parameters.AddWithValue("@longitud", longitud);
+                cmd.Parameters.AddWithValue("@estado", Estado);
                 //
                 con.Open();
 
                 int codResultado = cmd.ExecuteNonQuery();
-                SqlDataReader dr = cmd.ExecuteReader();
-                dr.Read();
+                //SqlDataReader dr = cmd.ExecuteReader();
+                //dr.Read();
                 //int codResultado = dr.IsDBNull(dr.GetOrdinal("Return Value")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Return Value"));
                 if (codResultado == 1)
                 {
                     response.codResultado = 1;
-                    response.desResultado = "Modificado Correctamente";
+                    response.desResultado = "Servicio modificado correctamente";
                 }
                 else
                 {
                     response.codResultado = 0;
-                    response.desResultado = dr.IsDBNull(dr.GetOrdinal("Mensaje")) ? "" : dr.GetString(dr.GetOrdinal("Mensaje"));
-                    //response.desResultado = "Error al modificar";
+                    //response.desResultado = dr.IsDBNull(dr.GetOrdinal("Mensaje")) ? "" : dr.GetString(dr.GetOrdinal("Mensaje"));
+                    response.desResultado = "Error al modificar";
                 }
               
                // response.codResultado = dr.IsDBNull(dr.GetOrdinal("Conectado")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Conectado"));

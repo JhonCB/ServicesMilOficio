@@ -92,3 +92,4 @@ C:\Users\JHON CB\Desktop\swaggerui\SwaggerUI.APIRest\obj\Release\SwaggerUI.APIRe
 C:\Users\JHON CB\Desktop\swaggerui\SwaggerUI.APIRest\obj\Release\SwaggerUI.APIRest.csproj.CopyComplete
 C:\Users\JHON CB\Desktop\swaggerui\SwaggerUI.APIRest\obj\Release\SwaggerUI.APIRest.dll
 C:\Users\JHON CB\Desktop\swaggerui\SwaggerUI.APIRest\obj\Release\SwaggerUI.APIRest.pdb
+C:\Users\JHON CB\Desktop\swaggerui\SwaggerUI.APIRest\bin\SwaggerUI.APIRest.xml

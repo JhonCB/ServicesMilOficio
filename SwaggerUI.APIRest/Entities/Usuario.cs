@@ -15,50 +15,54 @@ namespace Entities
         /// <summary>  
         /// Tipo_usuario  
         /// </summary>  
-        public int Tipo_usuario { get; set; }
+        public int tipoUsuario { get; set; }
         /// <summary>  
         /// Rol  
         /// </summary>  
-        public string Rol { get; set; }
+        public string rol { get; set; }
         /// <summary>  
         /// Contrasena  
         /// </summary>  
-        public string Contrasena { get; set; }
+        public string contrasenia { get; set; }
         /// <summary>  
         /// Nombres  
         /// </summary>  
-        public string Nombres { get; set; }
+        public string nombres { get; set; }
         /// <summary>  
         /// Correo 
         /// </summary>  
-        public string Correo { get; set; }
+        public string correo { get; set; }
         /// <summary>  
         /// Activo
         /// </summary>  
-        public Boolean Activo { get; set; }
+        public Boolean activo { get; set; }
         /// <summary>  
         /// Eliminado
         /// </summary>  
-        public Boolean Eliminado { get; set; }
+        public Boolean eliminado { get; set; }
         /// <summary>  
         /// Telefono
         /// </summary>  
-        public string Telefono { get; set; }
+        public string telefono { get; set; }
         /// <summary>  
         /// Ubicacion  
         /// </summary>  
-        public string Ubicacion { get; set; }
+        public string ubicacion { get; set; }
         /// <summary>  
         /// Latitud  
         /// </summary>  
-        public string Latitud { get; set; }
+        public string latitud { get; set; }
         /// <summary>  
         /// Longitud  
         /// </summary>  
-        public string Longitud { get; set; }
+        public string longitud { get; set; }
+        /// <summary>  
+        /// urlFoto  
+        /// </summary>  
+        public string urlFoto { get; set; }
         /// <summary>  
         /// FechaNacimiento  
         /// </summary>
-        public string FechaNacimiento { get; set; }
+        public string fechaNacimiento { get; set; }
     }
 }

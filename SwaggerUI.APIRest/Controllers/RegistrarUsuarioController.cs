@@ -23,7 +23,7 @@ namespace SwaggerUI.APIRest.Controllers
         /// <summary>  
         /// getListarTipoUsuario
         /// </summary>  
-        public ResponseUsuarioReg getRegistrarUsuario(String Nombre, String Email, String Contrasenia, Boolean isActivo, Boolean isElimando, String FechaCreacion,int Telefono, int codRol, int codLocalizacion)
+        public ResponseUsuarioReg getRegistrarUsuario(String Nombre, String Email, String Contrasenia, Boolean isActivo, Boolean isElimando, String FechaCreacion,int Telefono, int codRol, int codLocalizacion, String urlFoto)
         {
 
             ResponseUsuarioReg response = new ResponseUsuarioReg();
@@ -41,24 +41,25 @@ namespace SwaggerUI.APIRest.Controllers
                 cmd.Parameters.AddWithValue("@telefono", Telefono);
                 cmd.Parameters.AddWithValue("@rol", codRol);
                 cmd.Parameters.AddWithValue("@localizacion", codLocalizacion);
+                cmd.Parameters.AddWithValue("@urlFoto", urlFoto);
 
                 con.Open();
 
-                int codResultado = cmd.ExecuteNonQuery();
+                //int codResultado = cmd.ExecuteNonQuery();
                 SqlDataReader dr = cmd.ExecuteReader();
                 dr.Read();
                 //int codResultado = dr.IsDBNull(dr.GetOrdinal("Return Value")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Return Value"));
-                if (codResultado == 1)
-                {
-                    response.codResultado = 1;
-                    response.desResultado = "Usuario registrado correctamente";
-                }
-                else
-                {
-                    response.codResultado = 0;
+               // if (codResultado == 1)
+                //{
+                    response.codResultado = dr.IsDBNull(dr.GetOrdinal("codResultado")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("codResultado"));
+                   // response.desResultado = "Usuario registrado correctamente";
+                //}
+                //else
+                //{
+                //    response.codResultado = 0;
                     response.desResultado = dr.IsDBNull(dr.GetOrdinal("Mensaje")) ? "" : dr.GetString(dr.GetOrdinal("Mensaje"));
-                    //response.desResultado = "Error al registrar";
-                }
+                //    response.desResultado = "Error al registrar";
+                //}
               
                // response.codResultado = dr.IsDBNull(dr.GetOrdinal("Conectado")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Conectado"));
                

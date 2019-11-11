@@ -36,8 +36,8 @@ namespace SwaggerUI.APIRest.Controllers
                 con.Open();
 
                 int codResultado = cmd.ExecuteNonQuery();
-                SqlDataReader dr = cmd.ExecuteReader();
-                dr.Read();
+                //SqlDataReader dr = cmd.ExecuteReader();
+                //dr.Read();
                 //int codResultado = dr.IsDBNull(dr.GetOrdinal("Return Value")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Return Value"));
                 if (codResultado == 1)
                 {
@@ -47,8 +47,8 @@ namespace SwaggerUI.APIRest.Controllers
                 else
                 {
                     response.codResultado = 0;
-                    response.desResultado = dr.IsDBNull(dr.GetOrdinal("Mensaje")) ? "" : dr.GetString(dr.GetOrdinal("Mensaje"));
-                    //response.desResultado = "Error al modificar";
+                    //response.desResultado = dr.IsDBNull(dr.GetOrdinal("Mensaje")) ? "" : dr.GetString(dr.GetOrdinal("Mensaje"));
+                    response.desResultado = "Error al eliminar servicio";
                 }
               
                // response.codResultado = dr.IsDBNull(dr.GetOrdinal("Conectado")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("Conectado"));

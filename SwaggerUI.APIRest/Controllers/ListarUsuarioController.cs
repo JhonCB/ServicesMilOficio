@@ -44,23 +44,24 @@ namespace SwaggerUI.APIRest.Controllers
                 {
                     Usuario usuario = new Usuario();
                     usuario.codUsuario = dr.IsDBNull(dr.GetOrdinal("CODIGO")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("CODIGO"));
-                    usuario.Nombres = dr.IsDBNull(dr.GetOrdinal("NOMBRE")) ? "" : dr.GetString(dr.GetOrdinal("NOMBRE"));
-                    usuario.Correo = dr.IsDBNull(dr.GetOrdinal("CORREO")) ? "" : dr.GetString(dr.GetOrdinal("CORREO"));
+                    usuario.nombres = dr.IsDBNull(dr.GetOrdinal("NOMBRE")) ? "" : dr.GetString(dr.GetOrdinal("NOMBRE"));
+                    usuario.correo = dr.IsDBNull(dr.GetOrdinal("CORREO")) ? "" : dr.GetString(dr.GetOrdinal("CORREO"));
 
-                    usuario.Contrasena = dr.IsDBNull(dr.GetOrdinal("PASSWORD")) ? "" : dr.GetString(dr.GetOrdinal("PASSWORD"));
-                    usuario.Telefono = dr.IsDBNull(dr.GetOrdinal("TELEFONO")) ? "" : dr.GetString(dr.GetOrdinal("TELEFONO"));
-                    usuario.Activo = dr.IsDBNull(dr.GetOrdinal("ACTIVO")) ? false : dr.GetBoolean(dr.GetOrdinal("ACTIVO"));
-                    usuario.Eliminado = dr.IsDBNull(dr.GetOrdinal("ELIMINADO")) ? false : dr.GetBoolean(dr.GetOrdinal("ELIMINADO"));
+                    usuario.contrasenia = dr.IsDBNull(dr.GetOrdinal("PASSWORD")) ? "" : dr.GetString(dr.GetOrdinal("PASSWORD"));
+                    usuario.telefono = dr.IsDBNull(dr.GetOrdinal("TELEFONO")) ? "" : dr.GetString(dr.GetOrdinal("TELEFONO"));
+                    usuario.activo = dr.IsDBNull(dr.GetOrdinal("ACTIVO")) ? false : dr.GetBoolean(dr.GetOrdinal("ACTIVO"));
+                    usuario.eliminado = dr.IsDBNull(dr.GetOrdinal("ELIMINADO")) ? false : dr.GetBoolean(dr.GetOrdinal("ELIMINADO"));
 
                     DateTime dtFechaInicio = dr.IsDBNull(dr.GetOrdinal("FECHA")) ? default(DateTime) : dr.GetDateTime(dr.GetOrdinal("FECHA"));
                     string fechaInicioString = dtFechaInicio.ToString("dd/MM/yyyy hh:mm:ss");
-                    usuario.FechaNacimiento = fechaInicioString;
+                    usuario.fechaNacimiento = fechaInicioString;
 
-                    usuario.Tipo_usuario = dr.IsDBNull(dr.GetOrdinal("IDROL")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("IDROL"));
-                    usuario.Rol = dr.IsDBNull(dr.GetOrdinal("ROL")) ? "" : dr.GetString(dr.GetOrdinal("ROL"));
-                    usuario.Ubicacion = dr.IsDBNull(dr.GetOrdinal("UBICACION")) ? "" : dr.GetString(dr.GetOrdinal("UBICACION"));
-                    usuario.Latitud = dr.IsDBNull(dr.GetOrdinal("LATITUD")) ? "" : dr.GetString(dr.GetOrdinal("LATITUD"));
-                    usuario.Longitud = dr.IsDBNull(dr.GetOrdinal("LONGITUD")) ? "" : dr.GetString(dr.GetOrdinal("LONGITUD"));
+                    usuario.tipoUsuario = dr.IsDBNull(dr.GetOrdinal("IDROL")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("IDROL"));
+                    usuario.rol = dr.IsDBNull(dr.GetOrdinal("ROL")) ? "" : dr.GetString(dr.GetOrdinal("ROL"));
+                    usuario.ubicacion = dr.IsDBNull(dr.GetOrdinal("UBICACION")) ? "" : dr.GetString(dr.GetOrdinal("UBICACION"));
+                    usuario.latitud = dr.IsDBNull(dr.GetOrdinal("LATITUD")) ? "" : dr.GetString(dr.GetOrdinal("LATITUD"));
+                    usuario.longitud = dr.IsDBNull(dr.GetOrdinal("LONGITUD")) ? "" : dr.GetString(dr.GetOrdinal("LONGITUD"));
+                    usuario.urlFoto = dr.IsDBNull(dr.GetOrdinal("URLFOTO")) ? "" : dr.GetString(dr.GetOrdinal("URLFOTO"));
 
                     alUsuario.Add(usuario);
                 }

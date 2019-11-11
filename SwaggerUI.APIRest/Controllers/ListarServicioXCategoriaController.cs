@@ -46,6 +46,7 @@ namespace SwaggerUI.APIRest.Controllers
                     Servicio servicio = new Servicio();
                     servicio.codServicio = dr.IsDBNull(dr.GetOrdinal("CODIGO")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("CODIGO"));
                     servicio.nombre = dr.IsDBNull(dr.GetOrdinal("NOMBRE")) ? "" : dr.GetString(dr.GetOrdinal("NOMBRE"));
+                    servicio.urlFoto = dr.IsDBNull(dr.GetOrdinal("URLFOTO")) ? "" : dr.GetString(dr.GetOrdinal("URLFOTO"));
                     servicio.calificacion = dr.IsDBNull(dr.GetOrdinal("CALIFICACION")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("CALIFICACION"));
 
                     DateTime dtFechaInicio = dr.IsDBNull(dr.GetOrdinal("FECHA-INICIO")) ? default(DateTime) : dr.GetDateTime(dr.GetOrdinal("FECHA-INICIO"));
@@ -57,6 +58,7 @@ namespace SwaggerUI.APIRest.Controllers
                     servicio.fechaFin = fechaFinString;
 
                     servicio.estado = dr.IsDBNull(dr.GetOrdinal("ESTADO")) ? "" : dr.GetString(dr.GetOrdinal("ESTADO"));
+                    servicio.descripcionServicio = dr.IsDBNull(dr.GetOrdinal("DESCRIPCIONSERVICIO")) ? "" : dr.GetString(dr.GetOrdinal("DESCRIPCIONSERVICIO"));
                     servicio.descripcion = dr.IsDBNull(dr.GetOrdinal("DESCRIPCION")) ? "" : dr.GetString(dr.GetOrdinal("DESCRIPCION"));
                     servicio.ubicacion = dr.IsDBNull(dr.GetOrdinal("UBICACION")) ? "" : dr.GetString(dr.GetOrdinal("UBICACION"));
                     servicio.latitud = dr.IsDBNull(dr.GetOrdinal("LATITUD")) ? "" : dr.GetString(dr.GetOrdinal("LATITUD"));

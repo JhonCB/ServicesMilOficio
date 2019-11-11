@@ -18,6 +18,10 @@ namespace Entities
         /// </summary>  
         public string nombre { get; set; }
         /// <summary>  
+        /// urlFoto  
+        /// </summary>  
+        public string urlFoto { get; set; }
+        /// <summary>  
         /// calificacion  
         /// </summary>  
         public int calificacion { get; set; }
@@ -33,6 +37,10 @@ namespace Entities
         /// estado  
         /// </summary>  
         public string estado { get; set; }
+        /// <summary>  
+        /// descripcion  
+        /// </summary>  
+        public string descripcionServicio { get; set; }
         /// <summary>  
         /// descripcion  
         /// </summary>  
