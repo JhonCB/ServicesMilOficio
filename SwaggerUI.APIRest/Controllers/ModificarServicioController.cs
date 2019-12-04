@@ -29,7 +29,7 @@ namespace SwaggerUI.APIRest.Controllers
             ResponseUsuarioReg response = new ResponseUsuarioReg();
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
-            {
+            {   //FECHA EN FORMATO AMERICANO yyyy/MM/dd
                 SqlCommand cmd = new SqlCommand("MODIFICAR_SERVICIO", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 		        cmd.Parameters.AddWithValue("@ID", codServicio);

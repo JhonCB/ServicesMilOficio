@@ -36,7 +36,7 @@ namespace SwaggerUI.APIRest.Controllers
                 cmd.Parameters.AddWithValue("@descripcion", Descripcion);
                 cmd.Parameters.AddWithValue("@calificacion", 0);
                 DateTime aDate = DateTime.Now;
-                cmd.Parameters.AddWithValue("@fecha_inicio", aDate.ToString("dd/MM/yyyy HH:mm:ss"));
+                cmd.Parameters.AddWithValue("@fecha_inicio", aDate.ToString("yyyy/MM/dd HH:mm:ss"));
                 cmd.Parameters.AddWithValue("@fecha_fin", FechaFin);
                 cmd.Parameters.AddWithValue("@idcategoria", CodCategoria);
                 cmd.Parameters.AddWithValue("@localizacion", codLocalizacion);

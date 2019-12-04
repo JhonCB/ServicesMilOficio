@@ -256,13 +256,13 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>10/05/2019 08:49:18</publishTime>
     </File>
     <File Include="bin/SwaggerUI.APIRest.dll">
-      <publishTime>11/11/2019 00:21:10</publishTime>
+      <publishTime>12/03/2019 20:20:14</publishTime>
     </File>
     <File Include="bin/SwaggerUI.APIRest.pdb">
-      <publishTime>11/11/2019 00:21:10</publishTime>
+      <publishTime>12/03/2019 20:20:14</publishTime>
     </File>
     <File Include="bin/SwaggerUI.APIRest.xml">
-      <publishTime>11/11/2019 00:21:10</publishTime>
+      <publishTime>12/03/2019 20:20:14</publishTime>
     </File>
     <File Include="bin/Swashbuckle.Core.dll">
       <publishTime>10/05/2019 08:49:18</publishTime>

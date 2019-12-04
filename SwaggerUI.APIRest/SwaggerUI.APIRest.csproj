@@ -165,6 +165,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ConsultarCorreoController .cs" />
+    <Compile Include="Controllers\ListarServicioPorSocioController.cs" />
+    <Compile Include="Controllers\ListarSolicitudServicioPorSocioController.cs" />
     <Compile Include="Controllers\ListarSolicitudServicioPorUsuarioController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\EliminarServicioController.cs" />
@@ -194,6 +196,7 @@
     <Compile Include="Entities\GeneradRecuperacionContrasenia\RecuperarContrasenia.cs" />
     <Compile Include="Entities\GeneradRecuperacionContrasenia\ResponseRecuperarContrasenia.cs" />
     <Compile Include="Entities\ResponseUsuario.cs" />
+    <Compile Include="Entities\ResultadoConsultaCorreo.cs" />
     <Compile Include="Entities\Resultado.cs" />
     <Compile Include="Entities\ListarCategoria\Categoria.cs" />
     <Compile Include="Entities\ListarCategoria\ResponseCategoria.cs" />

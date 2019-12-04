@@ -491,6 +491,30 @@
             getConsultarCorreo
             </summary>  
         </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarServicioPorSocioController">
+             SE ENCARGA DE LISTAR TODOS LAS OFERTAS CON MEJOR CALIFICACION
+            
+            <summary>  
+            ListarServicioXSocioController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarServicioPorSocioController.getListarServicioXSocio(System.Int32)">
+            <summary>  
+            getListarServicioXSocio
+            </summary>  
+        </member>
+        <member name="T:SwaggerUI.APIRest.Controllers.ListarSolicitudServicioPorSocioController">
+             SE ENCARGA DE LISTAR TODAS LAS SOLICITUDES QUE HIZO UN USUARIO
+            
+            <summary>  
+            ListarSolicitudServicioPorSocioController  
+            </summary> 
+        </member>
+        <member name="M:SwaggerUI.APIRest.Controllers.ListarSolicitudServicioPorSocioController.getListarSolicitudPorSocio(System.Int32)">
+            <summary>  
+            getListarSolicitudPorUsuario
+            </summary>  
+        </member>
         <member name="T:SwaggerUI.APIRest.Controllers.ListarSolicitudServicioPorUsuarioController">
              SE ENCARGA DE LISTAR TODAS LAS SOLICITUDES QUE HIZO UN USUARIO
             
@@ -715,6 +739,31 @@
             getListarCategoria
             </summary>  
         </member>
+        <member name="P:SwaggerUI.APIRest.Entities.ResultadoConsultaCorreo.codResultado">
+            <summary>  
+            codResultado 
+            </summary>  
+        </member>
+        <member name="P:SwaggerUI.APIRest.Entities.ResultadoConsultaCorreo.desResultado">
+            <summary>  
+            desResultado
+            </summary>  
+        </member>
+        <member name="P:SwaggerUI.APIRest.Entities.ResultadoConsultaCorreo.codUsuario">
+            <summary>  
+            codUsuario
+            </summary>  
+        </member>
+        <member name="P:SwaggerUI.APIRest.Entities.ResultadoConsultaCorreo.codTipoUsuario">
+            <summary>  
+            codTipoUsuario
+            </summary>  
+        </member>
+        <member name="P:SwaggerUI.APIRest.Entities.ResultadoConsultaCorreo.telefono">
+            <summary>  
+            telefono
+            </summary>  
+        </member>
         <member name="P:SwaggerUI.APIRest.Entities.Resultado.codResultado">
             <summary>  
             codResultado 
@@ -724,6 +773,11 @@
             <summary>  
             desResultado
             </summary>  
+        </member>
+        <member name="P:Entities.Solicitud.idSolicitud">
+            <summary>  
+            idSolicitud  
+            </summary>
         </member>
         <member name="P:Entities.Solicitud.idServicio">
             <summary>  

@@ -30,11 +30,12 @@ namespace SwaggerUI.APIRest.Controllers
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
             {
+                //FECHA EN FORMATO AMERICANO
                 SqlCommand cmd = new SqlCommand("REGISTRAR_USUARIO", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@nombre", Nombre);
                 cmd.Parameters.AddWithValue("@email", Email);
-                cmd.Parameters.AddWithValue("@Contraseña", Contrasenia);
+                cmd.Parameters.AddWithValue("@Contrasenia", Contrasenia);
                 cmd.Parameters.AddWithValue("@Activo", isActivo);
                 cmd.Parameters.AddWithValue("@Eliminado", isElimando);
                 cmd.Parameters.AddWithValue("@fecha", FechaCreacion);

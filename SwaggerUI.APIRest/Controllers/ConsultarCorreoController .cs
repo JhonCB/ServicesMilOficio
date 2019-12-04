@@ -23,10 +23,10 @@ namespace SwaggerUI.APIRest.Controllers
         /// <summary>  
         /// getConsultarCorreo
         /// </summary>  
-        public Resultado getConsultarCorreo(String email)
+        public ResultadoConsultaCorreo getConsultarCorreo(String email)
         {
 
-            Resultado response = new Resultado();
+            ResultadoConsultaCorreo response = new ResultadoConsultaCorreo();
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cnxANTP"].ToString());
             try
             {
@@ -40,11 +40,16 @@ namespace SwaggerUI.APIRest.Controllers
              
                     response.codResultado = dr.IsDBNull(dr.GetOrdinal("CodResultado")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("CodResultado"));
                     response.desResultado = dr.IsDBNull(dr.GetOrdinal("DesResultado")) ? "" : dr.GetString(dr.GetOrdinal("DesResultado"));
-
+                    response.codUsuario = dr.IsDBNull(dr.GetOrdinal("codUsuario")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("codUsuario"));
+                    response.codTipoUsuario = dr.IsDBNull(dr.GetOrdinal("codTipoUsuario")) ? default(Int32) : dr.GetInt32(dr.GetOrdinal("codTipoUsuario"));
+                    response.telefono = dr.IsDBNull(dr.GetOrdinal("telefono")) ? "" : dr.GetString(dr.GetOrdinal("telefono"));
             }
             catch (Exception ex)
             {
                 response.codResultado = 0;
+                response.codUsuario = 0;
+                response.codTipoUsuario = 0;
+                response.telefono = "0";
                 response.desResultado = ex.ToString();
             }
 

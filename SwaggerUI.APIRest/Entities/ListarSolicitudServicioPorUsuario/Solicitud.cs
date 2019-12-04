@@ -10,6 +10,10 @@ namespace Entities
     public class Solicitud 
     {
         /// <summary>  
+        /// idSolicitud  
+        /// </summary>
+        public int idSolicitud { get; set; }
+        /// <summary>  
         /// idServicio  
         /// </summary>
         public int idServicio { get; set; }
